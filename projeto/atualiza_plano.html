@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Cliente</title>
+</head>
+<body>
+    <h2>Selecione o Cliente para Atualizar o Plano:</h2>
+    <form action="atualiza_plano.php" method="post">
+        <label for="id_cliente">ID do Cliente:</label>
+        <input type="text" id="id_cliente" name="id_cliente" required>
+        <br><br>
+        <label><strong>Selecione o novo plano:</strong></label><br>
+        <label>
+            <input type="radio" name="plano" value="19,90"> Básico R$19,90
+        </label><br>
+        <label>
+            <input type="radio" name="plano" value="29,90"> Intermediário R$29,90
+        </label><br>
+        <label>
+            <input type="radio" name="plano" value="39,90"> Premium R$39,90
+        </label><br><br>
+        <button type="submit">Atualizar Plano</button>
+    </form>
+</body>
+</html>
